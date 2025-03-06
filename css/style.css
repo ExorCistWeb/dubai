@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Fahkwang:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+@import url('https://fonts.cdnfonts.com/css/verdana');
+@import url('https://fonts.googleapis.com/css2?family=Ovo&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    background: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    font-style: normal;
+    font-family: "Fahkwang", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: #000;
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 100px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1720px;
+    margin: 0 auto;
+}
+
+@media (max-width: 1840px) {
+    .wrapper {
+        padding: 0 60px;
+    }
+}
+
+main {
+    position: relative;
+    z-index: 4;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px 0 90px;
+    background-image: url(../img/main1.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+main::before {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    content: ' ';
+    display: block;
+    top: 0;
+    z-index: -1;
+    background-size: cover;
+    background-position: bottom;
+    background-image: url(../img/main_2.png);
+}
+
+header {
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.logo {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15.5px;
+}
+
+.link_header {
+    display: flex;
+    align-items: center;
+    gap: 62px;
+}
+
+.link_header a {
+    font-family: 'SF Pro Display', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    /* identical to box height */
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.link_header a img {
+    margin-right: 10px;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    text-align: center;
+}
+
+.about h1 {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 84%;
+    /* identical to box height, or 93px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+/* .about p {
+    width: 274px;
+    margin: 0 auto;
+} */
+
+p {
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.call_btn {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    padding-bottom: 5px;
+    width: 60px;
+    text-align: center;
+    line-height: 30px;
+    /* identical to box height */
+    text-align: center;
+    color: #FFFFFF;
+    border-bottom: 1px solid #AC1A1D;
+}
+
+#efficient {
+    background-image: url(../img/efficient.png);
+    background-size: cover 1354px;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.efficient {
+    padding-top: 150px;
+}
+
+h2 {
+    font-family: 'Fahkwang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 93%;
+    /* or 74px */
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.ul_info {
+    margin: 100px 0;
+}
+
+.ul_info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ul_info h4::before {
+    content: ' ';
+    width: 10px;
+    height: 10px;
+    display: block;
+    background: #fff;
+    border-radius: 50px;
+}
+
+h4 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 57px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(172, 26, 29, 0.8);
+}
+
+.efficient_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 30px;
+}
+
+.efficient_box {
+    width: 100%;
+    background: rgba(136, 136, 136, 0.1);
+    backdrop-filter: blur(25px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+    padding: 40px 88px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+h3 {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 65px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.efficient_box h3 span {
+    color: rgba(172, 26, 29, 0.8);
+    ;
+}
+
+.efficient_box h3 {
+    margin-bottom: 70px;
+}
+
+.efficient_info_table p {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.efficient_info_table {
+    padding: 25px 0;
+    width: 100%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.efficient_info_number .efficient_info_table {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+}
+
+.efficient_info_number .efficient_info_table span {
+    font-family: "Ovo", serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #AC1A1D;
+}
+
+.ps_message {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.join_btn {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 263px;
+    font-size: 35px;
+    line-height: 42px;
+    color: #FFFFFF;
+    border-bottom: 1px solid #AC1A1D;
+}
