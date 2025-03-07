@@ -305,3 +305,122 @@ h3 {
     color: #FFFFFF;
     border-bottom: 1px solid #AC1A1D;
 }
+
+#models {
+    padding-top: 240px;
+    padding-bottom: 200px;
+}
+
+.models {
+    text-align: center;
+}
+
+.models h3 {
+    text-align: center;
+}
+
+.models_content {
+    margin: 100px 0 43px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 50px 20px;
+}
+
+.card_model {
+    width: 100%;
+    max-width: 415px;
+    background: rgba(217, 217, 217, 0.2);
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.card_model_img {
+    width: 100%;
+    height: 482px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card_model_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card_model_name {
+    margin: 20px 0;
+}
+
+h5 {
+    font-family: 'Fahkwang';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+    color: #AC1A1D;
+}
+
+.card_model_info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 17px;
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.card_model_info p {
+    font-family: 'Verdana', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.link_border {
+    border-bottom: 1px solid #AC1A1D;
+}
+
+.card_model_blocked {
+    position: relative;
+    /* filter: blur(7.5px); */
+    z-index: 1;
+    background: rgba(217, 217, 217, 0.20);
+    -webkit-box-shadow: 0px 0px 8px 2px rgba(217, 217, 217, 0.2);
+    -moz-box-shadow: 0px 0px 8px 2px rgba(217, 217, 217, 0.2);
+    box-shadow: 0px 0px 8px 2px rgba(217, 217, 217, 0.2);
+}
+
+.blur {
+    filter: blur(7.5px);
+}
+
+.card_model_blocked::after {
+    content: url(../img/lock.svg);
+    width: 99px;
+    height: 99px;
+    z-index: 999;
+    position: absolute;
+    top: 212px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%)
+}
+
+.view_btn {
+    color: #FFF;
+    margin: 0 auto;
+    font-family: "SF Pro Display";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 25px;
+    border-bottom: 2px solid #AC1A1D;
+}
