@@ -86,12 +86,29 @@ header {
     color: #FFFFFF;
 }
 
-.menu {
+.header ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 15.5px;
+    border-radius: 20px;
+    background: rgba(20, 20, 20, 0.30);
+    backdrop-filter: blur(10px);
+    padding: 20px 30px;
+    gap: 45px;
+}
+
+.header ul li {
+    list-style: none;
+}
+
+.header ul li a {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    letter-spacing: 1.5px;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
 }
 
 .link_header {
@@ -102,17 +119,17 @@ header {
 
 .link_header a {
     font-family: 'SF Pro Display', sans-serif;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    /* identical to box height */
+    line-height: normal;
     text-transform: uppercase;
-    color: #FFFFFF;
 }
 
 .link_header a img {
-    margin-right: 10px;
+    margin-right: 5px;
+    width: 12px;
+    height: 12px;
 }
 
 .about {
@@ -325,6 +342,7 @@ h3 {
     width: 100%;
     flex-wrap: wrap;
     gap: 50px 20px;
+    justify-content: center;
 }
 
 .card_model {
@@ -423,4 +441,265 @@ h5 {
     line-height: normal;
     padding-bottom: 25px;
     border-bottom: 2px solid #AC1A1D;
+}
+
+#very {
+    padding: 190px 0 290px;
+    background-image: url(../img/very.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.very {
+    text-align: center;
+}
+
+.very_content {
+    border-radius: 20px;
+    background: rgba(136, 136, 136, 0.10);
+    backdrop-filter: blur(25px);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px 100px 50px;
+    gap: 50px;
+}
+
+.very_box {
+    display: flex;
+    align-items: self-start;
+    flex-direction: column;
+    text-align: start;
+    max-width: 485px;
+}
+
+.very_box p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Verdana;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h6 {
+    color: #FFF;
+    font-family: Fahkwang;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 15px 0 50px;
+}
+
+#stages {
+    padding: 160px 0 140px;
+    text-align: center;
+}
+
+.stages_content {
+    display: flex;
+    gap: 20px;
+    margin-top: 110px;
+}
+
+.stages_box {
+    height: 500px;
+}
+
+.left_stages .stages_box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.stages_box_table {
+    width: 50%;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 520px;
+}
+
+.stages_box_table p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Verdana;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.stages_box_table span {
+    color: #AC1A1D;
+    font-family: Ovo;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.left_stages,
+.right_stages {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.left_stages {
+    max-width: 1140px;
+}
+
+.stages_box_img {
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.stages_box_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#services {
+    text-align: center;
+    padding: 100px 0;
+}
+
+#services_vip {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    display: flex;
+    align-items: end;
+    position: relative;
+    height: 497px;
+    border-radius: 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+.swiper_info {
+    border-radius: 0px 0px 20px 20px;
+    background: rgba(0, 0, 0, 0.20);
+    backdrop-filter: blur(3.5px);
+    min-height: 95px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+    padding: 10px 20px;
+    gap: 30px;
+    margin: 0;
+}
+
+.swiper_info p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Verdana;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: start;
+}
+
+.swiper_info svg {
+    width: 23px;
+    height: 38px;
+}
+
+.swipper_btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.swipper_btn div {
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    border: 1px solid #AC1A1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+#important {
+    text-align: center;
+    padding: 102px 0 185px;
+    background-image: url(../img/important.png);
+    background-size: cover;
+    background-position: top center;
+}
+
+.important_info {
+    text-align: start;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.important_box {
+    display: flex;
+    flex-direction: column;
+    min-height: 280px;
+    width: 50%;
+}
+
+.impotrant_box_cont {
+    display: flex;
+    flex-direction: column;
+    max-width: 743px;
+    gap: 40px;
+}
+
+.important_box p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Verdana;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.important_info .important_box:nth-child(1) {
+    border-right: 1px solid rgba(255, 255, 255, 0.20);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.important_info .important_box:nth-child(2) {
+    align-items: end;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+}
+
+.important_info .important_box:nth-child(3) {
+    border-right: 1px solid rgba(255, 255, 255, 0.20);
+    justify-content: end;
+}
+
+.important_info .important_box:nth-child(4) {
+    align-items: end;
+    justify-content: end;
 }
