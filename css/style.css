@@ -164,24 +164,48 @@ p {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.call_btn {
-    font-family: 'SF Pro Display';
+.contact_btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    font-size: 25px;
-    padding-bottom: 5px;
-    width: 60px;
+    line-height: normal;
+    display: flex;
+    width: 199px;
+    height: 40px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 36px;
+    background: rgba(172, 26, 29, 0.40);
+}
+
+.more_details {
+    color: #FFF;
     text-align: center;
-    line-height: 30px;
-    /* identical to box height */
-    text-align: center;
-    color: #FFFFFF;
-    border-bottom: 1px solid #AC1A1D;
+    font-family: "SF Pro Display";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: flex;
+    width: 199px;
+    height: 64px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    border: 1px solid #AC1A1D;
+    flex-shrink: 0;
 }
 
 #efficient {
     background-image: url(../img/efficient.png);
-    background-size: cover 1354px;
+    background-size: contain;
     background-position: center top;
     background-repeat: no-repeat;
 }
@@ -208,6 +232,7 @@ h2 {
 
 .ul_info {
     display: flex;
+    gap: 30px;
     align-items: center;
     justify-content: space-between;
 }
@@ -233,6 +258,19 @@ h4 {
     color: rgba(172, 26, 29, 0.8);
 }
 
+.ul_content p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: 'Verdana', sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    display: block;
+    margin-top: 32px;
+    padding-right: 30px;
+    border-right: 1px solid rgba(255, 255, 255, 0.40);
+}
+
 .efficient_content {
     display: flex;
     justify-content: space-between;
@@ -256,7 +294,7 @@ h4 {
 h3 {
     font-style: normal;
     font-weight: 400;
-    font-size: 50px;
+    font-size: 44px;
     line-height: 65px;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.8);
@@ -268,12 +306,16 @@ h3 {
 }
 
 .efficient_box h3 {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
+}
+
+.efficient_info h3 {
+    text-align: start;
 }
 
 .efficient_info_table p {
     font-weight: 400;
-    font-size: 30px;
+    font-size: 26px;
     line-height: 36px;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -310,21 +352,25 @@ h3 {
 }
 
 .join_btn {
-    font-family: 'SF Pro Display';
+    color: #FFF;
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 30px;
+    padding: 10px;
     font-style: normal;
     font-weight: 400;
-    display: flex;
-    align-items: center;
+    line-height: normal;
+    display: inline-flex;
     justify-content: center;
-    width: 263px;
-    font-size: 35px;
-    line-height: 42px;
-    color: #FFFFFF;
-    border-bottom: 1px solid #AC1A1D;
+    align-items: center;
+    gap: 10px;
+    border-radius: 10px;
+    background: rgba(172, 26, 29, 0.40);
+    max-width: 283px;
 }
 
 #models {
-    padding-top: 240px;
+    padding-top: 204px;
     padding-bottom: 200px;
 }
 
@@ -444,7 +490,7 @@ h5 {
 }
 
 #very {
-    padding: 190px 0 290px;
+    padding: 120px 0 160px;
     background-image: url(../img/very.png);
     background-size: cover;
     background-repeat: no-repeat;
@@ -453,6 +499,18 @@ h5 {
 
 .very {
     text-align: center;
+}
+
+.very .join_btn {
+    margin-top: 106px;
+}
+
+.ul_content:nth-child(3) p {
+    border: none;
+}
+
+.very .ul_content {
+    text-align: start;
 }
 
 .very_content {
@@ -484,7 +542,7 @@ h5 {
 
 h6 {
     color: #FFF;
-    font-family: Fahkwang;
+    font-family: 'Fahkwang';
     font-size: 40px;
     font-style: normal;
     font-weight: 400;
@@ -493,7 +551,7 @@ h6 {
 }
 
 #stages {
-    padding: 160px 0 140px;
+    padding: 100px 0 140px;
     text-align: center;
 }
 
@@ -650,7 +708,8 @@ h6 {
     text-align: center;
     padding: 102px 0 185px;
     background-image: url(../img/important.png);
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
     background-position: top center;
 }
 
@@ -702,4 +761,296 @@ h6 {
 .important_info .important_box:nth-child(4) {
     align-items: end;
     justify-content: end;
+}
+
+.important_info_text {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Verdana;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 100px;
+    text-align: start;
+}
+
+section h3 {
+    text-align: center;
+}
+
+.reviews_bottom {
+    max-width: 665px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.reviews_bottom span {
+    color: #FFF;
+    font-family: Verdana;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reviews_bottom .link_header {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    justify-content: center;
+}
+
+.reviews_bottom .link_header a {
+    color: #FFF;
+    font-family: "SF Pro Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.reviews_bottom .link_header a img {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.reviews {
+    margin-top: 46px;
+}
+
+#faq {
+    padding-top: 230px;
+    padding-bottom: 140px;
+}
+
+.faq {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-item {
+    padding-bottom: 80px;
+    margin-bottom: 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.50);
+}
+
+.accordion-header {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.accordion_title {
+    color: #FFF;
+    font-family: 'Fahkwang';
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 93%;
+    /* 32.55px */
+    text-transform: uppercase;
+    max-width: 750px;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+}
+
+.accordion-content p {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Verdana;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.accordion-content.open {
+    padding-top: 40px;
+    max-height: 200px;
+    /* Adjust based on content */
+}
+
+.accordion-icon {
+    font-size: 40px;
+    font-family: "Fahkwang", sans-serif;
+    font-weight: 200;
+    border-radius: 50px;
+    border: 1px solid #AC1A1D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+}
+
+footer {
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.footer {
+    display: flex;
+    align-items: self-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.footer_info {
+    display: flex;
+    gap: 80px;
+}
+
+.footer_logo {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.footer_logo .logo {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Fahkwang';
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68px;
+    text-transform: uppercase;
+}
+
+.footer_logo .link_header {
+    display: flex;
+    align-items: center;
+    gap: 42px;
+    justify-content: center;
+}
+
+.footer_logo .link_header a {
+    color: #FFF;
+    font-family: "SF Pro Display";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.footer_logo .link_header a img {
+    margin-right: 10px;
+    width: 26px;
+    height: 26px;
+}
+
+.menu_footer {
+    border-radius: 20px;
+    background: rgba(136, 136, 136, 0.10);
+    backdrop-filter: blur(25px);
+    padding: 20px 110px 20px 20px;
+}
+
+.menu_footer ul li {
+    list-style: none;
+}
+
+.menu_footer ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.menu_footer a {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 200;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.menu_footer h6 {
+    margin: 0;
+    padding: 0;
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+.footer_info_left {
+    align-items: center;
+}
+
+.site_contact {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    text-align: center;
+    max-width: 174px;
+}
+
+.site_contact .logo {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Fahkwang';
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.site_contact_info a {
+    color: #FFF;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.site_contact_info .link_header {
+    display: flex;
+    margin-top: 19px;
+    justify-content: space-between;
+}
+
+.site_contact_info .link_header a img {
+    margin-right: 9px;
+}
+
+.site_contact .join_btn {
+    color: #FFF;
+    text-align: center;
+    font-family: "SF Pro Display";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: none;
+    margin: 0 auto;
+    width: 100%;
 }
