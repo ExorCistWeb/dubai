@@ -36,3 +36,7 @@ function toggleAccordion(header) {
         `;
     }
 }
+Fancybox.bind("[data-fancybox='gallery']", {
+    Toolbar: true,
+    loop: true
+});

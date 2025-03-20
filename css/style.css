@@ -1054,3 +1054,165 @@ footer {
     margin: 0 auto;
     width: 100%;
 }
+
+.servicesReviewsSwiper .swiper-slide {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.reviews_img {
+    width: 100%;
+    height: 168px;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: scale .3s ease-in-out;
+}
+
+.reviews_img:hover img {
+    scale: 1.1;
+    transition: scale .3s ease-in-out;
+}
+
+.reviews_img_bottom {
+    height: 202px;
+}
+
+.reviews_img img {
+    width: 100%;
+    height: 100%;
+    transition: scale .3s ease-in-out;
+    object-fit: cover;
+    object-position: center;
+}
+
+.servicesReviewsSwiper {
+    margin-top: 50px;
+}
+
+@media (max-width: 480px) {
+    section {
+        display: none;
+    }
+    .logo {
+        font-size: 7px;
+        line-height: 140%;
+    }
+    .header ul {
+        padding: 8px 10px;
+        gap: 10px;
+    }
+    main {
+        padding-top: 10px;
+        background-position: -950px top;
+    }
+    .about {
+        gap: 5px;
+    }
+    .about h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .about p br {
+        display: none;
+    }
+    p {
+        font-size: 10px;
+        line-height: normal;
+    }
+    .wrapper {
+        padding: 0 20px;
+    }
+    .header ul li a {
+        font-size: 8px;
+    }
+    .header ul li {
+        font-size: 8px;
+    }
+    .link_header a {
+        font-size: 7px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .link_header a img {
+        margin-right: 3px;
+        width: 5px;
+        height: 5px;
+    }
+    .link_header {
+        gap: 19px;
+    }
+    .contact_btn {
+        width: 98px;
+        height: 23px;
+        border-radius: 10px;
+        font-size: 12px;
+        margin: 0 auto;
+        margin-bottom: 17px;
+    }
+    .more_details {
+        font-size: 17px;
+        border-radius: 10px;
+        width: 110px;
+        height: 30px;
+    }
+    .footer_logo {
+        display: none;
+    }
+    .menu_footer {
+        width: auto;
+        background: none;
+        border-radius: none;
+        padding: 0;
+    }
+    footer {
+        gap: 25px;
+    }
+    .menu_footer h6 {
+        font-size: 8px;
+    }
+    .menu_footer ul {
+        gap: 9px;
+    }
+    .menu_footer ul li a {
+        font-size: 8px;
+    }
+    .menu_footer ul li {
+        font-size: 8px;
+    }
+    .site_contact .logo {
+        font-size: 10px;
+        line-height: 130%;
+        margin: 0;
+    }
+    .site_contact_info a {
+        font-size: 8px;
+    }
+    .site_contact_info .link_header {
+        margin-top: 10px;
+    }
+    .site_contact {
+        gap: 14px;
+    }
+    .site_contact_info {
+        margin-top: -8px;
+    }
+    .site_contact_info .link_header a img {
+        margin-right: 3px;
+    }
+    .site_contact .join_btn {
+        font-size: 8px;
+        border-radius: 10px;
+        width: 73px;
+        height: 22px;
+        padding: 0;
+        margin-top: 5px;
+    }
+    .footer_info {
+        gap: 20px;
+    }
+    .footer_info_left .menu_footer ul {
+        gap: 3px;
+    }
+}
