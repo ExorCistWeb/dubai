@@ -40,3 +40,43 @@ Fancybox.bind("[data-fancybox='gallery']", {
     Toolbar: true,
     loop: true
 });
+
+function scalePage() {
+    let minWidth = 668;
+    let maxWidth = 1380;
+    let currentWidth = window.innerWidth;
+    let scale = Math.min(1, Math.max(0.5, currentWidth / maxWidth));
+
+    document.body.style.transform = `scale(${scale})`;
+    document.body.style.transformOrigin = "top left";
+    document.body.style.width = `${100 / scale}%`;
+    document.body.style.height = `${100 / scale}%`;
+    document.documentElement.style.overflowX = "hidden";
+}
+
+window.addEventListener("resize", scalePage);
+window.addEventListener("load", scalePage);
+
+const openModalButtons = document.querySelectorAll(".openModal");
+const closeModal = document.getElementById("closeModal");
+const modalOverlay = document.getElementById("modalOverlay");
+const body = document.body;
+
+openModalButtons.forEach(button => {
+    button.addEventListener("click", () => {
+        modalOverlay.classList.add("active");
+        body.classList.add("modal-active");
+    });
+});
+
+closeModal.addEventListener("click", () => {
+    modalOverlay.classList.remove("active");
+    body.classList.remove("modal-active");
+});
+
+modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.remove("active");
+        body.classList.remove("modal-active");
+    }
+});

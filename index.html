@@ -11,6 +11,12 @@
 </head>
 
 <body>
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal">
+            <p>Get access to VIP catalogue</p>
+            <button id="closeModal">Close</button>
+        </div>
+    </div>
     <main>
         <header>
             <div class="wrapper">
@@ -18,8 +24,8 @@
                     <a href="" class="logo">DUBAI <br> PRINCESSES</a>
 
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Services</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="">About Us</a></li>
 
                         <li><a href="">Contacts</a></li>
@@ -39,7 +45,7 @@
         </div>
         <div class="main_btn">
             <a class="contact_btn" href="">Contact</a>
-            <a href="" class="more_details">More details</a>
+            <a href="#efficient" class="more_details">More details</a>
         </div>
     </main>
     <section id="efficient">
@@ -93,7 +99,7 @@
                             </div>
                         </div>
 
-                        <a class="join_btn" href="">Join a private club</a>
+                        <button class="join_btn openModal">Join a private club</button>
                     </div>
                     <div class="efficient_box">
                         <div class="efficient_info efficient_info_number">
@@ -401,7 +407,7 @@
                             </div>
                         </a>
                     </div>
-                    <a href="" class="view_btn">View all models</a>
+                    <button class="view_btn openModal">View all models</button>
                 </div>
             </div>
         </section>
@@ -462,7 +468,7 @@
                         <p>You cast youself among<br> the already selected <br>companions</p>
                     </div>
                 </div>
-                <a class="join_btn" href="">Join a private club</a>
+                <button class="join_btn openModal" href="">Join a private club</button>
             </div>
         </div>
     </section>
@@ -520,7 +526,7 @@
                             <img src="./img/stages1.png" alt="">
                         </div>
                     </div>
-                    <div class="right_stages">
+                    <div class="right_stages right_stages_pc">
                         <div class="stages_box_img">
                             <img src="./img/stages2.png" alt="">
                         </div>
@@ -912,7 +918,7 @@
                             </div>
 
                         </div>
-                        <a class="join_btn" href="">Join a private club</a>
+                        <button class="join_btn openModal" href="">Join a private club</button>
                     </div>
                 </div>
             </div>

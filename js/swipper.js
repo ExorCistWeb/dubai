@@ -11,8 +11,11 @@ var swiper = new Swiper(".servicesSwiper", {
         280: {
             slidesPerView: 2, // 2 слайда до 480px
         },
-        768: {
+        480: {
             slidesPerView: 3, // 3 слайда от 768px и выше
+        },
+        1400: {
+            slidesPerView: 4, // 3 слайда от 768px и выше
         }
     }
 });
@@ -29,8 +32,11 @@ var swiper = new Swiper(".servicesVipSwiper", {
         280: {
             slidesPerView: 2, // 2 слайда до 480px
         },
-        768: {
+        480: {
             slidesPerView: 3, // 3 слайда от 768px и выше
+        },
+        1400: {
+            slidesPerView: 4, // 3 слайда от 768px и выше
         }
     }
 });
@@ -47,8 +53,11 @@ var swiper = new Swiper(".servicesReviewsSwiper", {
         280: {
             slidesPerView: 1, // 2 слайда до 480px
         },
-        768: {
-            slidesPerView: 3, // 3 слайда от 768px и выше
+        480: {
+            slidesPerView: 2, // 3 слайда от 768px и выше
+        },
+        1280: {
+            slidesPerView: 2, // 3 слайда от 768px и выше
         }
     }
 });
