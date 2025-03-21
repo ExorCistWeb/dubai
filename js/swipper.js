@@ -8,7 +8,7 @@ var swiper = new Swiper(".servicesSwiper", {
         prevEl: ".swiper_prev",
     },
     breakpoints: {
-        480: {
+        280: {
             slidesPerView: 2, // 2 слайда до 480px
         },
         768: {
@@ -26,7 +26,7 @@ var swiper = new Swiper(".servicesVipSwiper", {
         prevEl: ".swiper_prev",
     },
     breakpoints: {
-        480: {
+        280: {
             slidesPerView: 2, // 2 слайда до 480px
         },
         768: {
@@ -44,8 +44,8 @@ var swiper = new Swiper(".servicesReviewsSwiper", {
         prevEl: ".swiper_prev",
     },
     breakpoints: {
-        480: {
-            slidesPerView: 2, // 2 слайда до 480px
+        280: {
+            slidesPerView: 1, // 2 слайда до 480px
         },
         768: {
             slidesPerView: 3, // 3 слайда от 768px и выше
