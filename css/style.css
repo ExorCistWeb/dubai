@@ -15,50 +15,11 @@
             font-family: "Fahkwang", sans-serif;
         }
         
-        body.modal-active {
-            overflow: hidden;
-        }
-        
-        .modal-overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-        }
-        
-        .modal {
-            background: white;
-            padding: 20px;
-            border-radius: 8px;
-            max-width: 500px;
-            text-align: center;
-            opacity: 0;
-            transform: translateY(-20px);
-            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-        }
-        
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
-        
-        .modal-overlay.active .modal {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        
         button {
             cursor: pointer;
         }
         
+        html,
         body {
             background: #000;
             width: 100%;
@@ -430,7 +391,7 @@
         
         .card_model {
             width: 100%;
-            max-width: 415px;
+            max-width: 24%;
             background: rgba(217, 217, 217, 0.2);
             border-radius: 20px;
             padding: 25px;
@@ -452,6 +413,7 @@
         
         .card_model_name {
             margin: 20px 0;
+            text-align: start;
         }
         
         h5 {
@@ -1137,6 +1099,72 @@
             display: none;
         }
         
+        .contact-modal {
+            position: fixed;
+            bottom: 50px;
+            right: 50px;
+            width: 250px;
+            border-radius: 20px;
+            background: rgba(0, 0, 0, 0.50);
+            padding: 30px 30px 40px;
+            display: none;
+            z-index: 9999;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            animation: pulse 2s infinite;
+        }
+        
+        .contact-modal .join_btn {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 50px;
+        }
+        
+        .contact-modal-content {
+            text-align: center;
+            position: relative;
+        }
+        
+        .closeModalContact {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            transform: rotate(45deg);
+        }
+        
+        .closeModalContact svg {
+            width: 14px;
+            height: 14px;
+        }
+        
+        .contact-modal-content .site_contact_info {
+            margin-top: 30px;
+        }
+        
+        .open_contact {
+            cursor: pointer;
+        }
+        
+        .contact-modal:hover {
+            animation: none;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+            50% {
+                transform: scale(1.05);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 0.8;
+            }
+        }
+        
         @media (max-width: 1600px) {
             .stages_content {
                 flex-direction: column;
@@ -1166,6 +1194,12 @@
             }
             .efficient_box {
                 padding: 30px 40px 50px;
+            }
+        }
+        
+        @media (max-width: 1320px) {
+            .modal-content {
+                padding: 80px 30px !important;
             }
         }
         
@@ -1661,6 +1695,7 @@
                 padding: 60px 0 20px;
             }
             .card_model {
+                max-width: unset;
                 width: 47%;
                 padding: 10px 19px 6px;
             }
@@ -1781,5 +1816,203 @@
                 width: 8px;
                 height: 8px;
                 margin-right: 5px;
+            }
+            .contact-modal .logo {
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 130%;
+                /* 23.25px */
+                text-transform: uppercase;
+            }
+            .site_contact_info a {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                text-transform: uppercase;
+            }
+            .site_contact_info .link_header a img {
+                height: 14px;
+                width: 14px;
+                margin-right: 5px;
+            }
+            .contact-modal .join_btn {
+                font-size: 20px;
+                width: 100% !important;
+                max-width: unset;
+                height: auto !important;
+                padding: 10px;
+            }
+            .contact-modal {
+                background: rgba(0, 0, 0, 0.80);
+                animation: none;
+            }
+        }
+        
+        body.modal-open {
+            overflow: hidden;
+        }
+        
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+            z-index: 9991;
+        }
+        
+        .modal .wrapper {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .modal-content {
+            position: relative;
+            border-radius: 20px;
+            background: #000;
+            padding: 100px 72px 100px 128px;
+            /* Установим максимальную высоту, чтобы окно не выходило за пределы */
+            overflow-y: auto;
+            /* Добавим прокрутку, если содержимое модального окна не помещается */
+            z-index: 9999;
+            width: 100%;
+            max-width: 1404px;
+            text-align: start;
+        }
+        
+        .modal-content h2 {
+            color: #FFF;
+            font-size: 70px !important;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 93% !important;
+            /* 65.1px */
+            text-align: start;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+        }
+        
+        .modal-content h2 span {
+            color: #AC1A1D;
+        }
+        
+        .modal-content p {
+            color: #FFF;
+            font-family: Verdana;
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 60px;
+        }
+        
+        .modal_flex {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            justify-content: space-between;
+            max-width: 1000px;
+            gap: 20px;
+        }
+        
+        .modal_contact {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+        
+        .modal_btn {
+            color: #FFF;
+            text-align: center;
+            font-family: "SF Pro Display";
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            border-bottom: 2px solid #AC1A1D;
+        }
+        
+        .modal_contact a {
+            font-size: 20px;
+        }
+        
+        .modal_contact .link_header a img {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+        }
+        
+        .modal_contact .link_header {
+            gap: 44px;
+        }
+        
+        .closeModal {
+            position: absolute;
+            right: 40px;
+            top: 40px;
+        }
+        
+        .closeModal svg {
+            width: 30px;
+            height: 30px;
+            transform: rotate(45deg);
+        }
+        
+        @media (max-width: 668px) {
+            .modal-content h2 {
+                color: #FFF;
+                font-size: 32px !important;
+            }
+            .modal_btn {
+                color: #FFF;
+                text-align: center;
+                font-family: "SF Pro Display";
+                font-size: 12px;
+            }
+            .closeModal {
+                position: absolute;
+                right: 40px;
+                top: 20px;
+            }
+            .modal_contact a {
+                font-size: 12px;
+            }
+            .modal-content p {
+                font-size: 12px !important;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .modal_flex {
+                flex-direction: column;
+                justify-content: center;
+            }
+            .modal_btn {
+                font-size: 18px;
+            }
+            .modal-content {
+                padding: 60px 20px 40px !important;
+            }
+            .closeModal {
+                position: absolute;
+                right: 20px;
+                top: 20px;
+            }
+            .closeModal svg {
+                width: 24px;
+                height: 24px;
+            }
+            .modal-content h2 {
+                color: #FFF;
+                font-size: 22px !important;
+            }
+            .modal-content p {
+                margin-bottom: 40px;
             }
         }

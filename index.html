@@ -11,12 +11,7 @@
 </head>
 
 <body>
-    <div class="modal-overlay" id="modalOverlay">
-        <div class="modal">
-            <p>Get access to VIP catalogue</p>
-            <button id="closeModal">Close</button>
-        </div>
-    </div>
+
     <main>
         <header>
             <div class="wrapper">
@@ -26,9 +21,9 @@
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="#services">Services</a></li>
-                        <li><a href="">About Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
 
-                        <li><a href="">Contacts</a></li>
+                        <li><a class="open_contact">Contacts</a></li>
                     </ul>
 
                     <div class="link_header">
@@ -468,7 +463,7 @@
                         <p>You cast youself among<br> the already selected <br>companions</p>
                     </div>
                 </div>
-                <button class="join_btn openModal" href="">Join a private club</button>
+                <button class="join_btn openModal">Join a private club</button>
             </div>
         </div>
     </section>
@@ -883,14 +878,14 @@
                     <div class="menu_footer">
                         <h6>Menu</h6>
                         <ul>
-                            <li><a href="">organization </a></li>
-                            <li><a href="">Models</a></li>
-                            <li><a href="">Vip</a></li>
-                            <li><a href="">stages</a></li>
-                            <li><a href="">service</a></li>
-                            <li><a href="">Details</a></li>
-                            <li><a href="">reviews</a></li>
-                            <li><a href="">Faq</a></li>
+                            <li><a href="#efficient">organization </a></li>
+                            <li><a href="#models">Models</a></li>
+                            <li><a href="#service_vip">Vip</a></li>
+                            <li><a href="#stages">stages</a></li>
+                            <li><a href="#service">service</a></li>
+                            <li><a href="#important">Details</a></li>
+                            <li><a href="#reviews">reviews</a></li>
+                            <li><a href="#faq">Faq</a></li>
                         </ul>
                     </div>
                 </div>
@@ -918,17 +913,61 @@
                             </div>
 
                         </div>
-                        <button class="join_btn openModal" href="">Join a private club</button>
+                        <button class="join_btn openModal">Join a private club</button>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="modal" id="modal">
+        <div class="wrapper">
+            <div class="modal-content">
+                <button class="closeModal"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="12.5" x2="12.5" y2="24" stroke="white"/>
+                    <line x1="-4.37114e-08" y1="11.5" x2="24" y2="11.5" stroke="white"/>
+                    </svg>
+                    </span></button>
+                <h2>GET ACCESS TO <span>VIP CATALOGUE</span> OVER 3,000 QUESTIONNAIRES </h2>
+                <p>Want to see the full VIP catalogue of over 3,000 model profiles? Join the private men’s club IMG model’s escort agency</p>
+                <div class="modal_flex">
+                    <a class="modal_btn" href="">Get access to VIP catalogue</a>
+                    <div class="modal_contact">
+
+                        <div class="link_header">
+                            <a href=""><img src="./img/arrow_header_link.svg" alt="">TG</a>
+                            <a href=""><img src="./img/arrow_header_link.svg" alt="">WA</a>
+                        </div>
+                        <a href="tel:+74951331726">+7 (495) 133-17-26</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact-modal">
+        <button class="closeModalContact"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line x1="12.5" x2="12.5" y2="24" stroke="white"/>
+            <line x1="-4.37114e-08" y1="11.5" x2="24" y2="11.5" stroke="white"/>
+            </svg>
+            </span></button>
+        <div class="contact-modal-content">
+            <a href="" class="logo">DUBAI <br> PRINCESSES</a>
+            <div class="site_contact_info">
+                <a href="tel:+74951331726">+7 (495) 133-17-26</a>
+                <div class="link_header">
+                    <a href=""><img src="./img/arrow_header_link.svg" alt="">TG</a>
+                    <a href=""><img src="./img/arrow_header_link.svg" alt="">WA</a>
+                </div>
+
+            </div>
+            <button class="join_btn openModal">Join a private club</button>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
 
     <script src="js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/swipper.js"></script>
+    <script src="js/modal.js"></script>
 </body>
 
 </html>
